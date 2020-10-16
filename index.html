@@ -47,10 +47,23 @@
                     <h2>Ingédients</h2>
 
                     <div class="ingredients">
-                        <p>Eau : 30 l</p>
-                        <p>Malt : 5 kg</p>
-                        <p>Houblon : 200 g</p>
-                        <p>Levure : 18 g</p>
+                        <p id="eau"></p>
+                        <p id="malt"></p>
+                        <p id="houblon"></p>
+                        <p id="levure"></p>
+                        
+                        <script>
+                            var litre = 20;
+                            var eau = 1.5 * litre;
+                            var malt = 0.25 * litre;
+                            var houblon = 10 * litre;
+                            var levure = 0.9 * litre;
+                        
+                            document.getElementById("eau").innerHTML = "Eau: " + eau + " L";
+                            document.getElementById("malt").innerHTML = "Malt: " + malt + " Kg";
+                            document.getElementById("houblon").innerHTML = "Houblon: " + houblon + " g";
+                            document.getElementById("levure").innerHTML = "Levure: " + levure + " g";
+                        </script>
                     </div>
                 </div>
 
