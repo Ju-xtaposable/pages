@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recette</title>
         <link rel="stylesheet" href="recette.css">
     </head>
@@ -44,30 +45,13 @@
             </div>
             <div>
                 <div class="colonne colonne1">
-                    <h2>Ingédients <input id="litreinput" type="number" name="flitre" value="20"><button onclick="calcul()">Ok</button></h2>
+                    <h2>Ingédients</h2>
 
                     <div class="ingredients">
-                        <p id="eau"></p>
-                        <p id="malt"></p>
-                        <p id="houblon"></p>
-                        <p id="levure"></p>
-                        
-                        <script>
-                            calcul();
-                            function calcul() {
-                              var litre = document.getElementById("litreinput").value;
-                              var eau = 1.5 * litre;
-                                var malt = 0.25 * litre;
-                                var houblon = 10 * litre;
-                                var levure = 0.9 * litre;
-                        
-                                document.getElementById("eau").innerHTML = "Eau: " + eau + " L";
-                                document.getElementById("malt").innerHTML = "Malt: " + malt + " Kg";
-                                document.getElementById("houblon").innerHTML = "Houblon: " + houblon + " g";
-                                document.getElementById("levure").innerHTML = "Levure: " + levure + " g";
-                            }
-                            
-                        </script>
+                        <p>Eau : 30 l</p>
+                        <p>Malt : 5 kg</p>
+                        <p>Houblon : 200 g</p>
+                        <p>Levure : 18 g</p>
                     </div>
                 </div>
 
