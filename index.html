@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <head>
         <meta charset="utf-8" />
         <title>Recette</title>
@@ -44,8 +43,8 @@
                 </table>
             </div>
             <div>
-                <div class="colonne colonne1" ng-app="">
-                    <h2>Ingédients <input type="number" ng-model="litre" placeholder="Enter litre de biére voulu"></h2>
+                <div class="colonne colonne1">
+                    <h2>Ingédients <input id="litreinput" type="number" name="flitre" value="20"><button onclick="calcul()">Ok</button></h2>
 
                     <div class="ingredients">
                         <p id="eau"></p>
@@ -54,15 +53,19 @@
                         <p id="levure"></p>
                         
                         <script>
-                            var eau = 1.5 * litre;
-                            var malt = 0.25 * litre;
-                            var houblon = 10 * litre;
-                            var levure = 0.9 * litre;
+                            function myFunction() {
+                              var litre = document.getElementById("litreinput").value;
+                              var eau = 1.5 * litre;
+                                var malt = 0.25 * litre;
+                                var houblon = 10 * litre;
+                                var levure = 0.9 * litre;
                         
-                            document.getElementById("eau").innerHTML = "Eau: " + eau + " L";
-                            document.getElementById("malt").innerHTML = "Malt: " + malt + " Kg";
-                            document.getElementById("houblon").innerHTML = "Houblon: " + houblon + " g";
-                            document.getElementById("levure").innerHTML = "Levure: " + levure + " g";
+                                document.getElementById("eau").innerHTML = "Eau: " + eau + " L";
+                                document.getElementById("malt").innerHTML = "Malt: " + malt + " Kg";
+                                document.getElementById("houblon").innerHTML = "Houblon: " + houblon + " g";
+                                document.getElementById("levure").innerHTML = "Levure: " + levure + " g";
+                            }
+                            
                         </script>
                     </div>
                 </div>
