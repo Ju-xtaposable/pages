@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="fr">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <head>
         <meta charset="utf-8" />
         <title>Recette</title>
@@ -44,7 +45,7 @@
             </div>
             <div>
                 <div class="colonne colonne1">
-                    <h2>Ingédients</h2>
+                    <h2>Ingédients <input type="number" ng-model="litre" placeholder="Enter litre de biére voulu"></h2>
 
                     <div class="ingredients">
                         <p id="eau"></p>
@@ -53,7 +54,6 @@
                         <p id="levure"></p>
                         
                         <script>
-                            var litre = 10;
                             var eau = 1.5 * litre;
                             var malt = 0.25 * litre;
                             var houblon = 10 * litre;
