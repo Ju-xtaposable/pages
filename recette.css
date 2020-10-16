@@ -107,7 +107,11 @@ div.colonne h2{
 }
 
 #litreinput{
-    
+    width: 32px;
+    height: 16px;
+    border: 0px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 div.colonne1{
